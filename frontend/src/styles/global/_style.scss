@@ -1,0 +1,114 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+$header-background: #292930;
+$header-color: #cae7df;
+$header-height: 50px;
+$header-mb: 20px;
+$chat-bg: #2a3136;
+$send-btn-bg: #3778c2;
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  background: $header-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $header-height;
+  margin-bottom: $header-mb;
+
+  &-title {
+    color: $header-color;
+    text-transform: uppercase;
+    font-size: 21px;
+  }
+}
+.main {
+  display: flex;
+  justify-content: center;
+  .chat {
+    background: $chat-bg;
+    width: 768px;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-action-bar {
+      border-top: 1px solid $header-color;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      padding: {
+        top: 5px;
+        bottom: 5px;
+      }
+
+      &__input {
+        background: $chat-bg;
+        height: 100%;
+        width: 90%;
+        color: $header-color;
+        font-size: 14px;
+        border: none {
+          radius: 0;
+        }
+        padding: {
+          left: 5px;
+          right: 5px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .send-btn {
+        width: 9%;
+        height: 100%;
+        background: $send-btn-bg;
+        border-radius: 0;
+        border: 1px solid lighten($send-btn-bg, 10);
+        color: $header-color;
+        text-transform: uppercase;
+      }
+    }
+    &-messages {
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &-message-container {
+      padding: 10px;
+      display: flex;
+      &__self {
+        justify-content: flex-end;
+        .chat-message {
+          background: lighten($header-background, 10);
+        }
+      }
+    }
+    &-message {
+      padding: 10px;
+      background: $header-background;
+      display: inline-block;
+      border-radius: 4px;
+      color: $header-color;
+      font-weight: 100;
+      font-size: 14px;
+
+      &__author {
+        color: darken($header-color, 20);
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
