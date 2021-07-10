@@ -1,5 +1,6 @@
 /* SCSS Compiled */
 /***************************************************              GENERAL RESET STYLES             ***************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
 html,
 body,
 div,
@@ -178,9 +179,12 @@ input:focus::-webkit-input-placeholder {
 @media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
 @media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
 /*@media end*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 /*usage  @include font-size(13);*/
 /* Brand Colors ------------------------------------------------*/
-/* wrapper */
 #wrapper {
   display: block;
   position: relative;
@@ -216,6 +220,14 @@ header {
   width: 100%;
   display: block;
   position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background: #292930;
+  color: #cae7df;
 }
 
 footer {

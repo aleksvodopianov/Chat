@@ -3,3 +3,10 @@ header {
 	display:block;
 	position:relative;
 }
+.header {
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	background: $header-background;
+	color: $header-color;
+}
