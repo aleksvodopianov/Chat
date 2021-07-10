@@ -7,10 +7,3 @@ package-lock.json
 .jshintrc
 
 .prettierrc.json
-
-frontend(parcel)
-
-gulpfile.js
-
-README(gulp).md
-

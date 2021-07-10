@@ -1,6 +1,7 @@
 /* SCSS Compiled */
+
 /***************************************************              GENERAL RESET STYLES             ***************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+
 html,
 body,
 div,
@@ -163,6 +164,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 /*@media*/
+
 /* @media (min-width: 1921px){} 													QHD \ UHD
 @media (min-width: 1600px) and (max-width: 1919px) {}	HD +
 @media (min-width: 1440px) and (max-width: 1599px) {}	macbook
@@ -178,13 +180,17 @@ input:focus::-webkit-input-placeholder {
 @media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
 @media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
 @media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+
 /*@media end*/
+
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*usage  @include font-size(13);*/
+
 /* Brand Colors ------------------------------------------------*/
+
 #wrapper {
   display: block;
   position: relative;
@@ -223,8 +229,12 @@ header {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-transform: uppercase;
   background: #292930;
   color: #cae7df;
@@ -236,5 +246,3 @@ footer {
   margin: 0 0 0;
   padding: 0 0 0;
 }
-
-/*# sourceMappingURL=/style.ff1c4cab.css.map */
