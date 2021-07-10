@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Smpl Chat</title>
-    <style>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1" />
+        <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+        <link href="iconsfont/iconsfont.min.css" type="text/css" />
+        <title>SmplChat</title>
+        <style>
         @font-face {
             font-family: "Roboto-Regular";
             src: url("../src/styles/fonts/Roboto-Regular.woff") format("woff"), url("../src/styles/fonts/Roboto-Regular.woff2") format("woff2");
         }
+        @font-face {
+            font-family: 'Font Awesome 5 Brands';
+            src: url("../iconsfont/webfonts/fa-brands-400.woff2") format("woff2"), url("../iconsfont/webfonts/fa-brands-400.woff") format("woff"), url("../iconsfont/webfonts/fa-brands-400.ttf") format("truetype"), url("../iconsfont/webfonts/fa-brands-400.svg#fontawesome") format("svg"); 
+        }
     </style>
-</head>
-<body>
-    <header class="header">
-        <h1 class="header-title">Simple Chat App</h1>
-    </header>
-    <main>
-        <div class="chat">
-            <div class="chat-messages">
-                <ul class="chat-message">
-                    <li class="chat-message">
-                        <p class="chat-message_author">@userName</p>
-                        <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="chat-message">
-                        <p class="chat-message_author">@userName</p>
-                        <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </li><li class="chat-message">
-                        <p class="chat-message_author">@userName</p>
-                        <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="chat-action-bar">
-                <input type="text" class="chat-action-bar_input">
-                <button class="chat-action-bar_btn">Send</button>
-            </div>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            @@include('_header.html')
+
+            <main class="flex">
+                <div class="layout">
+                    <div class="chat">
+                        <div class="chat-messages">
+                            <ul class="chat-message">
+                                <li class="chat-message">
+                                    <p class="chat-message_author">@userName</p>
+                                    <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </li>
+                                <li class="chat-message">
+                                    <p class="chat-message_author">@userName</p>
+                                    <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </li><li class="chat-message">
+                                    <p class="chat-message_author">@userName</p>
+                                    <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chat-action-bar">
+                            <input type="text" class="chat-action-bar_input">
+                            <button class="chat-action-bar_btn">Send</button>
+                        </div>
+                    </div>
+                    <div id="sidebar"></div>
+                    <aside></aside>
+                </div>
+            </main>
+            @@include('_footer.html')
         </div>
-    </main>
-    <footer></footer>
-    <script src="./js/index.js"></script>
-</body>
+
+        <script src="js/index.min.js"></script>
+    </body>
 </html>

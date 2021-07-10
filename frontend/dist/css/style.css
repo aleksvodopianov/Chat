@@ -201,7 +201,7 @@ input:focus::-webkit-input-placeholder {
 .layout {
   margin: 0 auto;
   position: relative;
-  width: 1400px;
+  width: 768px;
 }
 
 main {
@@ -235,9 +235,24 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-transform: uppercase;
   background: #292930;
+  margin-bottom: 15px;
+}
+
+.header-title {
+  margin: 15px 0;
   color: #cae7df;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.chat {
+  height: calc(100vh - 80px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  background: #cae7df;
 }
 
 footer {
