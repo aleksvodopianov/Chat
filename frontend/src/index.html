@@ -7,15 +7,25 @@
         <link href="iconsfont/iconsfont.min.css" type="text/css" />
         <title>SmplChat</title>
         <style>
-        @font-face {
-            font-family: "Roboto-Regular";
-            src: url("../src/styles/fonts/Roboto-Regular.woff") format("woff"), url("../src/styles/fonts/Roboto-Regular.woff2") format("woff2");
-        }
-        @font-face {
-            font-family: 'Font Awesome 5 Brands';
-            src: url("../iconsfont/webfonts/fa-brands-400.woff2") format("woff2"), url("../iconsfont/webfonts/fa-brands-400.woff") format("woff"), url("../iconsfont/webfonts/fa-brands-400.ttf") format("truetype"), url("../iconsfont/webfonts/fa-brands-400.svg#fontawesome") format("svg"); 
-        }
-    </style>
+            @font-face {
+                font-family: 'Roboto-Regular';
+                src: url('../src/styles/fonts/Roboto-Regular.woff')
+                        format('woff'),
+                    url('../src/styles/fonts/Roboto-Regular.woff2')
+                        format('woff2');
+            }
+            @font-face {
+                font-family: 'Font Awesome 5 Brands';
+                src: url('../iconsfont/webfonts/fa-brands-400.woff2')
+                        format('woff2'),
+                    url('../iconsfont/webfonts/fa-brands-400.woff')
+                        format('woff'),
+                    url('../iconsfont/webfonts/fa-brands-400.ttf')
+                        format('truetype'),
+                    url('../iconsfont/webfonts/fa-brands-400.svg#fontawesome')
+                        format('svg');
+            }
+        </style>
     </head>
 
     <body>
@@ -29,19 +39,29 @@
                             <ul class="chat-message">
                                 <li class="chat-message">
                                     <p class="chat-message_author">@userName</p>
-                                    <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="chat-message_content">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit.
+                                    </p>
                                 </li>
                                 <li class="chat-message">
-                                    <p class="chat-message_author">@userName</p>
-                                    <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                </li><li class="chat-message">
-                                    <p class="chat-message_author">@userName</p>
-                                    <p class="chat-message_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="chat-message_author">@userName1</p>
+                                    <p class="chat-message_content">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit.
+                                    </p>
+                                </li>
+                                <li class="chat-message chat-message__self">
+                                    <p class="chat-message_author">@userName2</p>
+                                    <p class="chat-message_content">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit.
+                                    </p>
                                 </li>
                             </ul>
                         </div>
                         <div class="chat-action-bar">
-                            <input type="text" class="chat-action-bar_input">
+                            <input type="text" class="chat-action-bar_input" />
                             <button class="chat-action-bar_btn">Send</button>
                         </div>
                     </div>
